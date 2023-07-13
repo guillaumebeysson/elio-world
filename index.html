@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Memory</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Elio World</h2>
+        <!-- <div id="imgJurassicPark">
+            <img src="assets/Jurassic_Park_Logo.png" alt="">
+        </div> -->
+        <div class="game"></div>
+        <div class="timer" id="timer">0 s</div>
+        <button class="reset" onclick="window.location.reload()">Recommencez</button>
+        <div class="modal" id="winModal">
+            <div class="modal-content">
+                <h3>BRAVO !</h3>
+                <br>
+                <p>Vous avez réussi à trouver tous les dinosaures.</p>
+                <br>
+                <p>Temps écoulé: <span id="elapsedTime"></span> secondes</p>
+                <button class="reset" onclick="window.location.reload()">Recommencez</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
