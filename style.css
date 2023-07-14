@@ -142,6 +142,22 @@ h2 {
     margin-bottom: 20px;
 }
 
+@-moz-document url-prefix() {
+
+    .item {
+        transform: rotateY(0deg);
+    }
+
+    .item.boxOpen {
+        transform: rotateY(180deg);
+    }
+
+    .boxOpen:after,
+    .boxMatch:after {
+        transform: rotateY(180deg);
+    }
+}
+
 @media screen and (max-width: 560px) {
     .container {
         padding: 10px;
